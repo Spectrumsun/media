@@ -1,9 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import styled from 'styled-components';
-import { A, useRoutes } from 'hookrouter';
-import { useQuery, queryCache } from 'react-query';
-
-// import Footer from '../components/Footer';
+import { navigate, useRoutes } from 'hookrouter';
 import routes from './router';
 
 
@@ -25,7 +22,7 @@ const NavBar = () => {
     <>
     <Wrapper>
     <Nav>
-      <h1>DEMO Streaming</h1>
+      <h1 onClick={() => navigate('/')}>DEMO Streaming</h1>
       <div> 
         <h4>Log in</h4>
         <h3>Start your free trial</h3>
