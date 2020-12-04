@@ -45,14 +45,77 @@ const SeriesWrapper = styled.div`
       flex-direction: row;
       flex-wrap: wrap;
       height:400px;
+      justify-content: space-between;
     }
     
     .image-cover img {
       height:auto;
       display:block;
-      width: 200px;
+      width: 250px;
     }
-  
+
+    @media screen and (max-width: 1872px) {
+      .image-cover img {
+        width: 200px;
+      }
+    }
+
+    @media screen and (max-width: 1872px) {
+      .image-cover img {
+        width: 200px;
+      }
+    }
+
+
+    @media screen and (max-width: 1590px) {
+      .image-cover img {
+        width: 190px;
+      }
+    }
+
+    @media screen and (max-width: 1451px) {
+      .image-cover img {
+        width: 150px;
+      }
+    }
+
+
+    @media screen and (max-width: 983px) {
+      .image-cover img {
+        width: 120px;
+      }
+    }
+
+
+    @media screen and (max-width: 800px) {
+      .image-cover img {
+        width: 100px;
+      }
+    }
+
+    @media screen and (max-width: 512px) {
+      .image-cover img {
+        width: 150px;
+      }
+    }
+
+
+    @media screen and (max-width: 487px) {
+      .image-cover img {
+        width: 100px;
+      }
+    }
+
+
+    @media screen and (max-width: 389px) {
+      .image-cover img {
+        width: 80px;
+      }
+    }
+
+
+
+    
 
 `;
 

@@ -79,7 +79,7 @@ const FooterStyle = styled.footer`
   background: #1E1E1E;
   color: #ffffff;
   padding: 50px;
-  
+
   .footer-container {
     margin: 0 auto;
     width: 70%;
@@ -99,5 +99,14 @@ const FooterStyle = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+
+  @media screen and (max-width: 647px) {
+    width: 90%;
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 `;

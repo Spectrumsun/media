@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import { navigate, useRoutes } from 'hookrouter';
 import routes from './router';
 
-
-
-
 const NavBar = () => {
   const routeResult = useRoutes(routes);
   const [ currentUrl, setCurrentUrl ] = useState('Titles');
@@ -18,7 +15,7 @@ const NavBar = () => {
     }
     setCurrentUrl(path)
   })
-  
+
   return (
     <>
     <Wrapper>
@@ -63,6 +60,11 @@ const Nav = styled.nav`
       background: #000000;
       padding: 10px;
     }
+  }
+
+  @media screen and (max-width: 647px) {
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
