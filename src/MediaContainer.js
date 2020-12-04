@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 const url = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json';
 
-const getRequest =  async () => await (await fetch(url)).json();
+export const getRequest =  async () => await (await fetch(url)).json();
 
 const MediaContainer = ({ type }) => {
   const { data, isFetching, error } = useQuery('fetchData', getRequest); 
@@ -23,7 +23,7 @@ const MediaContainer = ({ type }) => {
         <div className="image-cover">
             {data.entries.filter((arr) => arr.releaseYear >= 2010 && arr.programType === type)
             .sort((a, b) => a.title.localeCompare(b.title))
-            .map((v, index) => <MovieCard data={v} index={index}/>)
+            .map((v, index) => <MovieCard data={v} key={index}/>)
             }
         </div>
       )

@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const MovieCard = ({ data , index }) => {
+const MovieCard = ({ data }) => {
   const url = data.images['Poster Art'].url
   return (
-    <Cover key={index}>
+    <Cover>
       <img src={url} alt="movie" />
       <p>{data.title}</p>
     </Cover>
   );
 }
-
-
 
 const Cover = styled.div`
   display: flex;

@@ -18,6 +18,7 @@ const NavBar = () => {
     }
     setCurrentUrl(path)
   })
+  
   return (
     <>
     <Wrapper>
