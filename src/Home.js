@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <HomeWrapper>
       {
-        types.map((type) => <CardStyle type={type}/>)
+        types.map((type, index) => <CardStyle type={type} index={index}/>)
       }
       </HomeWrapper>
       <Footer />

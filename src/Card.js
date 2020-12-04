@@ -4,10 +4,10 @@ import { navigate } from 'hookrouter';
 import placeHolder from './assets/placeholder.png';
 
 
-const Card = ({ type }) => {
+const Card = ({ type, index }) => {
   return (
-    <CardStyle onClick={() => navigate(`/${type.toLowerCase()}`)}>
-      <div>
+    <CardStyle onClick={() => navigate(`/${type.toLowerCase()}`)} key={index}>
+      <div key={index}>
       <img src={placeHolder} alt="placeHolder" />
       <h4>{type.toUpperCase()}</h4>
       </div>
