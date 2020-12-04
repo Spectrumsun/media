@@ -26,6 +26,10 @@ A simple web application
 
  # What would you do differently if you were allocated more time?
  * Add some animation and more responsive.
+ * Add more test case
+
+ # Test
+ * yarn test to run the test suit . Test runner is jest. 
 # FAQs
 * Contact spectrumsun@hotmail.com
 
