@@ -51,18 +51,13 @@
     "regenerator-runtime": "^0.13.7"
   },
   "jest": {
-    "verbose": true,
     "clearMocks": true,
-    "collectCoverage": true,
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
     "moduleNameMapper": {
       "\\.(css)$": "jest-transform-css",
       "\\.(css|scss|svg|png)$": "identity-obj-proxy"
-    },
-    "setupFiles": [
-      "<rootDir>/src/tests/testConfig.js"
-    ]
+    }
   }
 }
