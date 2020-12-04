@@ -2,8 +2,7 @@
 A simple web application 
 
 # View App
-    * Host App       https://front-phone.herokuapp.com/
-
+    * Host App   https://sample-mov.herokuapp.com/
 
 # Technologies Used
    * Front-end: React
@@ -13,13 +12,11 @@ A simple web application
    * /series -> to load the series
    * /movies -> to load the movies 
 
-
 # To Install
 * Download or clone the repo
 * open terminal inside root directory of cloned folder
 * type yarn to install the  all dependencies
 * yarn start to run the app 
-
 
 # How did you decide on the technical and architectural choices used as part of your solution?
  * Was based on my previous experience with react and web development. Break the app in to reusable component is the base of react which was why I tried as much as possible to reuse any logic that seem to be repeated elsewhere in the codebase.
