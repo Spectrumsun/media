@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const MovieCard = ({ data }) => {
+const MovieCard = ({ data , index}) => {
   const url = data.images['Poster Art'].url
   return (
-    <Cover>
+    <Cover key={index}>
       <img src={url} alt="movie" />
       <p>{data.title}</p>
     </Cover>

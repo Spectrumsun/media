@@ -23,7 +23,7 @@ const MediaContainer = ({ type }) => {
         <div className="image-cover">
             {data.entries.filter((arr) => arr.releaseYear >= 2010 && arr.programType === type)
             .sort((a, b) => a.title.localeCompare(b.title))
-            .map((v) => <MovieCard data={v} />)
+            .map((v, index) => <MovieCard data={v} index={index}/>)
             }
         </div>
       )
