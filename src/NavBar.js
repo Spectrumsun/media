@@ -51,6 +51,7 @@ const Nav = styled.nav`
   align-items: center;
   color: #ffffff;
   justify-content: space-between;
+  cursor: pointer;
   div {
     display: flex;
     align-items: center;
